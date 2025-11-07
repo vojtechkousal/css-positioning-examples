@@ -9,35 +9,46 @@
 <body>
     <header>
         <nav aria-label="Main navigation">
-            <a href="../index.html"> <img src="../images/logo.png" alt="Squirrel logo">
+            <a href="#"> <img src="./images/logo.png" alt="Squirrel logo">
             </a> <!-- logo -->
             <span class="spacer"></span>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="#" class="current">Services</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li id="services-li">
+                    <a href="./pages/services.html">Services</a>
+                    <ul id="services-menu">
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Soups</a></li>
+                        <li><a href="#">Coffee</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main class="services">
         <h1 style="text-align: center;">Services</h1>
         <article>
-            <selection id="bakery">
-                <h2>Bakery</h2>
+            <selection id="bakery" class="service-section">
+                <h2 class="service-title">Bakery</h2>
                 <p>We bake that and that.</p>
                 <img src="../images/bread.jpg">
             </selection>
-            <section id="soups">
-                <h2>Soups</h2>
-                <p>We also make soups like this.</p>
-                <img src="../images/soup.jpg">
-            </section>
-            <section id="coffee">
-                <h2>Coffee</h2>
+            
+            <section id="coffee" class="service-section">
+                <h2 class="service-title">Coffee</h2>
                 <p>We also brew coffee like this.</p>
                 <img src="../images/cappuccino-coffee-white-cup.jpg">
             </section>
+
+            <section id="soups" class="service-section">
+                <h2 class="service-title">Soups</h2>
+                <p>We also make soups like this.</p>
+                <img src="../images/soup.jpg">
+            </section>
+
+            <a href="#top" class="back-to-top">Back to top ↑</a>
         </article>
 
         <aside>
